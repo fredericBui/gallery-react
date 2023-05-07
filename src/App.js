@@ -25,7 +25,7 @@ function App() {
         const imgElement = document.createElement('img')
         const button = document.createElement('button')
         button.setAttribute('id', 'button')
-        button.innerHTML = '<i class="fa-solid fa-trash"></i>'
+        button.innerHTML = 'X'
         imgElement.src = image // affichage de l'image dans une balise <img>
         gallery.appendChild(div)
         div.appendChild(imgElement)
@@ -37,7 +37,7 @@ function App() {
 
     gallery.addEventListener('click', (e) => {
       console.log(e)
-      if (e.target.nodeName === 'BUTTON' || e.target.nodeName === 'I') {
+      if (e.target.nodeName === 'BUTTON') {
         e.target.parentNode.remove()
       } else if (e.target.nodeName === 'IMG') {
         const img = document.createElement('img')
