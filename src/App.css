@@ -23,7 +23,7 @@
 }
 
 #modal {
-  position: absolute;
+  position: sticky;
   width: 99vw;
   height: 98vh;
   top: 0;
