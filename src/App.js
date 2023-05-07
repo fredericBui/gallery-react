@@ -65,7 +65,7 @@ function App() {
       />
       <form>
         <label for="upload-photo">
-          <i class="fa-regular fa-image"> Ajouter une image</i>
+          <i className="fa-regular fa-image"> Ajouter une image</i>
         </label>
         <input type="file" name="image" id="upload-photo" />
       </form>
